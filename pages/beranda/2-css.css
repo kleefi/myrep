@@ -1,0 +1,63 @@
+<style>
+@media (max-width: 800px) and (min-width: 300px){
+.main__package--gamer .main__content > ul > li {
+margin: auto;
+width: 85%;
+}
+.wrap-center-frm {
+    padding-bottom: 1px !important;
+}
+   .wrap-center-frm .col-sm-12 {
+    width: 90%;
+}
+.page-template-page-beranda .main__package ul.main__content > li {
+    width: 85%;
+}
+#wrapset-term {
+    width: 85%;
+    margin-bottom: 35px!important;
+}
+}
+@media (min-width: 1200px) {
+.main__package ul.main__content > li {
+    max-width: 85%!important;
+}
+.main__package--gamer .main__content > ul > li {
+    max-width: 85%!important;
+}
+  .main__package ul.main__content > li {
+    max-width: 20%;
+  }
+.main__package--gamer .main__content > ul > li {
+    max-width: 20%;
+}
+.card__header .card__tag .points p {
+    font-size: 0.5rem;
+}
+.icon img {
+    width: 12px;
+    height: 12px;
+}
+.card__header > h3 {
+    font-size: 2.50rem;
+}
+.card__header .card__tag .value > p {
+    font-size: 1.5rem;
+}
+.card__header .card__tag .value > span {
+    font-size: 1rem;
+}
+.card__desc > ul > li {
+    font-size: 11px;
+}
+.card__list > li .icon {
+    font-size: 11px;
+}
+.card__list > li {
+    font-size: 11px;
+}
+.card__footer {
+    font-size: 1rem;
+}
+}
+</style>
