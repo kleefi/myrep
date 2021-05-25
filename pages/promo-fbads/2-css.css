@@ -1633,4 +1633,24 @@
 	     list-style-type:disc;
 	     padding-right: 5px;
 	}
+/* set height for pricing table - edited by charles simanjuntak */
+.pricing{
+height:860px;
+}
+/* set class for harga - edited by charles simanjuntak*/
+.harga{
+font-size: 3rem; 
+padding-top:180px; 
+padding-bottom:0.2rem;
+text-align:center;
+font-weight:bold; 
+text-align:center; 
+ background:linear-gradient(to right, #66004d 20%, #66004d 40%, #4d0039 60%, #fff 80%);
+background-size: 200% auto;color: #000;
+background-clip:text;
+text-fill-color: transparent;
+-webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; animation: animate 1s linear infinite; margin-bottom: 0px;"
+}
+/*close charles simanjuntak*/
 	</style>
