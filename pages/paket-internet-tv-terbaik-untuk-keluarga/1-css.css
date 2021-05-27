@@ -1,0 +1,33 @@
+<style>
+.special {
+    display: none;
+}
+.card__tag {
+    display: none;
+}
+.container.jumbotron__distract.tvkabel .jumbotron__content {
+	display: none;
+}
+iframe#gamer-trl {
+	box-shadow: 0 3px 5px #0008 !important;
+	margin: 0 auto !important;
+	display: block;
+	background: #ffffff;
+	padding: 20px;
+        width: 1000px;
+height: calc(1000px * 0.56);
+}
+@media screen and (max-width: 1080px) and (min-width: 1500px) {
+	iframe#gamer-trl {
+		width: 1000px;
+		height: calc(1000px * 0.56);
+	}
+}
+@media screen and (max-width: 579px) and (min-width: 320px) {
+	iframe#gamer-trl {
+		width: 85vw;
+		height: calc(85vw * 0.56);
+	}
+}
+</style>
+
