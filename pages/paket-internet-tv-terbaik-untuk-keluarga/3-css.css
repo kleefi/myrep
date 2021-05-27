@@ -105,7 +105,52 @@ margin-bottom: 22px;
 }
 .main__additional .col-md-4{width:90%; margin:0 auto 1rem;}
 }
-/*center bottom CTA - edited by charles simanjuntak*/
+/*styling pricing table - edited by charles simanjuntak */
+.wrap-center-frm {
+    padding-bottom:0px;
+}
+.boost-a,.boost-c{
+font-size:22px;
+}
+.boost-b{
+font-weight:600;
+color:#54585B;
+margin:-15%!important;
+}
+.boost-d{
+padding-top:10px;
+font-size:16px;
+font-style:normal!important;
+display:none;
+}
+.boost-e{
+padding-top:10px;
+font-size:16px;
+font-style:normal!important;
+}
+hr.gradiasi{
+background:linear-gradient(to right, #64309b 20%, #9c4c9c 40%, #b50aa2 60%)!important;
+}
+.newprod .points p{
+color:#54585B!important;
+}
 .container.cta{
 width:fit-content;
+}
+.newprod .card__desc{
+border-top:unset!important;
+}
+/* add image free router - edited by charles simanjuntak*/
+.img-router{
+top:-23%!important;
+width:40%!important;
+float:left!important;
+position:absolute!important;
+margin-left:65%!important;
+}
+/* add text cocok untuk 5-7 perangkat dll */
+.cocok{
+color:#8F2F8D;font-weight:bold;
+}
+}
 </style>
