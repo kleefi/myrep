@@ -141,13 +141,12 @@ width:fit-content;
 border-top:unset!important;
 }
 /* add image free router - edited by charles simanjuntak*/
-.img-router{
-top:-23%!important;
-width:40%!important;
-float:left!important;
-position:absolute!important;
-margin-left:65%!important;
+@media (max-width: 580px){
+.boost-b{
+	padding:20px 0!important;
+	}
 }
+
 /* add text cocok untuk 5-7 perangkat dll */
 .cocok{
 color:#8F2F8D;font-weight:bold;
