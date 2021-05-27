@@ -140,12 +140,6 @@ width:fit-content;
 .newprod .card__desc{
 border-top:unset!important;
 }
-/* add image free router - edited by charles simanjuntak*/
-@media (max-width: 580px){
-.boost-b{
-	padding:20px 0!important;
-	}
-}
 
 /* add text cocok untuk 5-7 perangkat dll */
 .cocok{
