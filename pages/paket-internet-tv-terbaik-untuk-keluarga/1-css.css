@@ -1,7 +1,7 @@
 <style>
 /* add image free router - edited by charles simanjuntak*/
 .img-router{
-top:-26%!important;
+top:-20%!important;
 width:40%!important;
 float:left!important;
 position:absolute!important;
@@ -10,16 +10,18 @@ margin-left:65%!important;
 @media (max-width: 580px){
 .img-router{
 top:-15%!important;
-width:25%!important;
+width:40%!important;
 float:left!important;
 position:absolute!important;
 margin-left:68%!important;
 }
+/* add image free router - edited by charles simanjuntak*/
+.boost-b{
+padding:40px 0!important;
 }
-.boost-b{padding:20px 0!important;}
+.card.card--package{
+margin-bottom:40px!important;
 }
-@media (max-width: 520px){
-li.newprod{margin-bottom:40px!important;}
 }
 
 .special {
