@@ -1,0 +1,47 @@
+<style>
+.main__package--gamer .card__header .card__tag .points p {
+    color: #f5b335!important;
+}
+.set-banner {
+margin: auto;
+width: 60%;
+padding-bottom: 61px;
+padding-top: 53px;
+}
+@media (min-width: 1200px) {
+  .main__package ul.main__content > li {
+    max-width: 20%;
+  }
+.main__package--gamer .main__content > ul > li {
+    max-width: 20%;
+}
+.card__header .card__tag .points p {
+    font-size: 4.5rem;
+}
+.icon img {
+    width: 12px;
+    height: 12px;
+}
+.card__header > h3 {
+    font-size: 1.50rem;
+}
+.card__header .card__tag .value > p {
+    font-size: 1.4rem;
+}
+.card__header .card__tag .value > span {
+    font-size: 1rem;
+}
+.card__desc > ul > li {
+    font-size: 11px;
+}
+.card__list > li .icon {
+    font-size: 11px;
+}
+.card__list > li {
+    font-size: 11px;
+}
+.card__footer {
+    font-size: 1rem;
+}
+}
+</style>
