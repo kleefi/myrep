@@ -1,0 +1,108 @@
+<style>
+.testimoni-cna {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.testimoni-cna img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.rowset-bank.nonset {
+    margin-bottom: 0px;
+}
+.wrap-center-frm.white {
+    background: #fff;
+}
+.style-bank .col-sm-6 {
+}
+.style-bank .btn.btn-lg.btn-info {
+background-color: #fff;
+border: 1px solid #a0a0a0;
+}
+.style-bank .btn-info {
+color: #a0a0a0;
+border-color: #84409e;
+position: absolute;
+top: 46px;
+right: 48px;
+width: 24px;
+height: 27px;
+}
+.btn-group-lg > .btn, .btn-lg {
+padding: 0px 0px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px;
+text-align: center;
+width: 4%;
+margin: auto;
+right: 34px;
+position: absolute;
+top: 8px;
+}
+.style-bank-p{
+  position: absolute;top:0px;
+}
+.style-bank-img {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+}
+.style-bank-img img {
+  max-width: 25%;
+  height: auto;
+}
+.rowset-bank{
+box-shadow: 0 5px 25px 2px rgba(53,64,90,.2);
+background-color: #fff;
+padding: 10px 32px 10px 32px;
+border-radius: 5px;
+}
+.wrap-center-frm {
+    padding-bottom:50px;
+    width: 46%;
+    margin: auto;
+}#wrapset-term {
+    width: 100%!important;
+padding: 20px 20px 20px 20px !important;
+margin-top: 12px;
+margin-bottom: 22px;
+}
+#wrapset-term {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 16px!important;
+    border-radius: 10px;
+}
+.wrap-center-frm {
+    padding-bottom:0px;
+}
+.main__package.main__package--gamer {
+    background-color: #f9f9f9;
+}
+.wrap-center-frm {
+    background-color: #f9f9f9;
+    padding-bottom: 51px;
+}
+.set-centerdwn {
+    margin: auto;
+    width: 60%;
+    padding-top: 60px;
+}
+#star-channels{padding:5rem 20% 0 20% !important;}
+#channels{margin-top:-40px;}
+@media (max-width: 579px) and (min-width: 320px){
+.testimoni-cna {
+    width: 84%;
+}
+#star-channels{padding:3rem 5% 0 5%;}
+.main__additional .boxed h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.main__additional .col-md-4{width:90%; margin:0 auto 1rem;}
+}
+</style>
