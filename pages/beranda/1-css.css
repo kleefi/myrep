@@ -314,6 +314,12 @@ margin:-15%!important;
 padding-top:10px;
 font-size:16px;
 font-style:normal!important;
+display:none;
+}
+.boost-e{
+padding-top:10px;
+font-size:16px;
+font-style:normal!important;
 }
 hr.gradiasi{
 background:linear-gradient(to right, #64309b 20%, #9c4c9c 40%, #b50aa2 60%)!important;
@@ -329,11 +335,11 @@ border-top:unset!important;
 }
 /* add image free router - edited by charles simanjuntak*/
 .img-router{
-top:60%!important;
+top:-30%!important;
 width:40%!important;
 float:left!important;
 position:absolute!important;
-margin-left:85%!important;
+margin-left:65%!important;
 }
 /* add text cocok untuk 5-7 perangkat dll */
 .cocok{
