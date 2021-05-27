@@ -105,4 +105,7 @@ margin-bottom: 22px;
 }
 .main__additional .col-md-4{width:90%; margin:0 auto 1rem;}
 }
+/*center bottom CTA - edited by charles simanjuntak*/
+.container.cta{
+width:fit-content;
 </style>
