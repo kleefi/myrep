@@ -8,6 +8,25 @@ width: 60%;
 padding-bottom: 61px;
 padding-top: 53px;
 }
+/*change add-on internet - edited by charles simanjuntak*/
+.col-sm-4 {
+ max-width:25%!important;
+ }
+@media (max-width: 575px) {
+.col-sm-4 {
+ max-width:100%!important;
+ }
+}
+@media (min-width: 576px) and (max-width:800px) {
+ .col-sm-4 {
+ max-width:50%!important;
+ }
+}
+
+/*give us a call to center - edited by charles simanjuntak*/
+.main__banner>.container{
+width:fit-content!important;
+}
 @media (min-width: 1200px) {
   .main__package ul.main__content > li {
     max-width: 20%;
