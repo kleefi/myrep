@@ -330,7 +330,7 @@ border-top:unset!important;
 }
 /* add image free router - edited by charles simanjuntak*/
 .img-router{
-top:-30%!important;
+top:-20%!important;
 width:40%!important;
 float:left!important;
 position:absolute!important;
@@ -339,5 +339,22 @@ margin-left:65%!important;
 /* add text cocok untuk 5-7 perangkat dll */
 .cocok{
 color:#8F2F8D;font-weight:bold;
+}
+/*set 4 column on pricing table (add jet20 package) - edited by charles simanjuntak*/
+.main__package ul.main__content>li{
+-ms-flex:0 0 24%;
+flex:0 0 24%;
+}
+@media (max-width: 550px){
+.main__package ul.main__content>li{
+-ms-flex:0 0 100%;
+flex:0 0 100%;
+}
+}
+@media (min-width: 551px) and (max-width:992px){
+.main__package ul.main__content>li{
+-ms-flex:0 0 49%;
+flex:0 0 49%;
+}
 }
 </style>
