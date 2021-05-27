@@ -1,4 +1,24 @@
 <style>
+/* add image free router - edited by charles simanjuntak*/
+.img-router{
+top:-26%!important;
+width:40%!important;
+float:left!important;
+position:absolute!important;
+margin-left:65%!important;
+}
+@media (max-width: 580px){
+.img-router{
+top:-15%!important;
+width:25%!important;
+float:left!important;
+position:absolute!important;
+margin-left:68%!important;
+}
+}
+.boost-b{padding:20px 0!important;}
+}
+
 .special {
     display: none;
 }
