@@ -314,6 +314,7 @@ margin:-15%!important;
 padding-top:10px;
 font-size:16px;
 font-style:normal!important;
+display:none;
 }
 hr.gradiasi{
 background:linear-gradient(to right, #64309b 20%, #9c4c9c 40%, #b50aa2 60%)!important;
