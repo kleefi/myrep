@@ -1,4 +1,8 @@
 <style>
+@media (max-width: 580px){
+.img-router{display:none;}
+.boost-b{padding:20px 0!important;}
+}
 @media (max-width: 800px) and (min-width: 300px){
 .main__package--gamer .main__content > ul > li {
 margin: auto;
