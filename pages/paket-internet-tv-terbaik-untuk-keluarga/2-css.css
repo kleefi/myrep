@@ -1,0 +1,312 @@
+<style>
+.btn-info {
+    color: #fff;
+    background-color: #8f2f8d;
+    border-color: #17a2b8;
+    padding: 0px 12px !important;
+}
+.fas.fa-arrow-circle-down {
+  position: relative;
+}
+.ss {
+width: 100%;
+text-align: center;
+font-size:15px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+.btn-group-lg > .btn, .btn-lg {
+    width: 90% !important;
+}
+.btn {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 0px 0px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    right:0px!important;
+top:0px!important;
+    text-align: center;
+    width: 100%!important;
+    margin: auto;
+    position: relative!important;
+}
+.wrap-center-frm.promo {
+    padding-bottom: 0px;
+    background: none;
+    display: flow-root;
+    width: 100% !important;
+    padding-bottom: 2px !important;
+    padding-top: 8px;
+}
+.wrap-center-frm {
+    display: contents;
+}
+.col-sm-12.channel-advs {
+    width: 100%;
+}
+.rowset-bank {
+    margin-bottom: 14px!important;
+padding:0px 0px 0px 0px !important;
+}
+.col-sm-12.paket-adds {
+  width: 100%;
+padding-top: 20px;
+padding-bottom: 5px;
+}
+.col-sm-12.paket-adds .col-sm-12 {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.col-sm-12.paket-add .col-sm-12 {
+    padding-bottom: 25px;
+    width: 70%;
+    margin: auto;
+    padding-top: 15px;
+}
+.ext {
+text-align: center;
+    color: #a14e9e;
+    font-size: 14px;
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 23px;
+}
+.col-sm-12.channel-adv {
+    display: block;
+    margin: auto;
+    width: 71%;
+    padding-top: 30px;
+    padding-bottom: 27px;
+}
+.conten-bisnis-wrap h1 {
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 0px;
+    font-weight: bold !important;
+}
+.wrap-tab-fixed-center h1 span {
+    color: #32b0c7;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.set-two p {
+    display: contents;
+}
+.card__label {
+    display: none;
+}
+.newprod .card__desc {
+    margin-top: 5px;
+}
+.newprod .card__desc {
+    padding-top: 0px !important;
+}
+.newprod .card__content {
+    margin: 0px;
+    padding: 0px;
+}
+.newprodx{
+display:none;
+}
+  .style-bank .col-sm-6 {
+}
+.style-bank .btn.btn-lg.btn-info {
+background-color: #fff;
+border: 1px solid #a0a0a0;
+}
+.style-bank .btn-info {
+color: #a0a0a0;
+border-color: #84409e;
+position: absolute;
+top: 46px;
+right: 48px;
+width: 24px;
+height: 27px;
+}
+.btn-group-lg > .btn, .btn-lg {
+padding: 0px 0px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px;
+text-align: center;
+width: 4%;
+margin: auto;
+right: 34px;
+position: absolute;
+top: 8px;
+}
+.style-bank-p{
+  position: absolute;top:0px;
+}
+.style-bank-img {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+}
+.style-bank-img img {
+  max-width: 25%;
+  height: auto;
+}
+.rowset-bank{
+box-shadow: 0 5px 25px 2px rgba(53,64,90,.2);
+background-color: #fff;
+padding: 10px 32px 10px 32px;
+border-radius: 5px;
+}
+.wrap-center-frm {
+    padding-bottom:50px;
+    width: 46%;
+    margin: auto;
+}#wrapset-term {
+    width: 100%!important;
+padding: 20px 20px 20px 20px !important;
+margin-top: 12px;
+margin-bottom: 22px;
+}
+picture {
+    position: relative;
+}
+.main__package--gamer .main__content > .absolute .iconic {
+    left:30.5% !important;
+}
+.main__package--gamer .card__header .card__tag .points p {
+    font-size: 3em;
+}
+.newprod.white .new-prod-set {
+    color: #fff;
+}
+.newprod.white .new-prod-set-a {
+    color: #fff;
+}
+.newprod.white .new-prod-set-ab {
+    color: #fff;
+}
+.newprod.white .pack-spec {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    color: #fff;
+}
+.main__package.main__package--gamer .card__content .card__desc {
+    border: none!important;
+}
+.main__package--gamer .card__header .card__tag .points p {
+    border-bottom: 1px solid #525252;
+    padding-bottom: 22px;
+}
+.newprod.white .new-prod-set {
+    border-bottom: 1px solid #525252;
+}
+.main__package--gamer .card__header .card__tag .value > span, .main__package--gamer .card__header > h3, .main__package--gamer .card__list > li .icon [class*="fa-"] {
+    color: #fff!important;
+}
+.newprod.white .new-prod-set-a-new {
+    color: #f5b335;
+}
+.newprod.white .new-prod-set-abc {
+    color: #fff;
+}
+.main__package--gamer .value span {
+    display: none;
+}
+.newprod .card__desc strong {
+    display: none;
+}
+.pack-summary table {
+    width: 90% !important;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px auto !important;
+    border: none !important;
+    background-color: initial !important;
+}
+.main__package--gamer .card {
+    background: #2d2d2d!important;
+}
+.main__package--gamer .main__content > ul > li {
+    width: 100%;
+    padding:0px!important;
+}
+.new-prod-set-a-new span {
+    font-size: 12px;
+    position: relative;
+    top: -6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+}
+.new-prod-set span {
+    position: relative;
+    font-size: 12px;
+    padding-right: 12px;
+    top: -11px;
+}
+.main__package--gamer .main__content > ul > li {
+    max-width: 100%!important;
+}
+.new-prod-set-a-new {
+    font-size: 2.5em;
+    color: #662b81;
+    font-weight: 800;
+    padding-top: 20px;
+}
+.main__package ul.main__content > li {
+    max-width: 100%!important;
+	margin: auto;
+	padding: 0px !important;
+}
+.newprod .card__header h3 {
+    font-size: 2.5em;
+
+}
+.newprod .card__tag .value > p {
+    font-size: 1.5rem;
+}
+.newprod .card__tag .value > span {
+    font-size: 1rem;
+}
+.new-prod-set {
+	font-size: 3em;
+	font-weight: bold;
+	color: #662b81;
+	position: relative;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 20px;
+}
+.newprod img {
+}
+.new-prod-set-a {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-top: 23px;
+}
+.newprod .card__desc {
+	height: auto;
+	border-top: 1px solid #e4e4e4;
+	padding-top: 27px;
+}
+.newprod .card__list {
+    display: none;
+}
+.newprod .points p {
+    color: #3bb0c9 !important;
+    font-size: 3em !important;
+}
+#wrapset-term {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 16px!important;
+    border-radius: 10px;
+}
+.wrap-center-frm {
+    padding-bottom:0px;
+}
+</style>
