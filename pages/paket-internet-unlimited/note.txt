@@ -1,0 +1,5 @@
+1. Template Product Page Section
+2. Template Editor Page Section
+3. Template Layout Page Section
+4. Template Layout Page Section
+5. Template Editor Page Section
