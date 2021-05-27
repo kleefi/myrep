@@ -351,4 +351,6 @@ margin-left:65%!important;
 .cocok{
 color:#8F2F8D;font-weight:bold;
 }
+/*remove space in price list card*/
+.card__tag{display:none;}
 </style>
