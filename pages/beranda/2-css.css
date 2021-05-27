@@ -1,5 +1,5 @@
 <style>
-@media (max-width: 580px){
+@media (min-580px) and (max-width: 767px){
 .img-router{
 top:-15%!important;
 width:25%!important;
