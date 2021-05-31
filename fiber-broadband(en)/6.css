@@ -1,0 +1,311 @@
+<style>
+   @media (max-width: 1000px) and (min-width: 800px){
+   .main__package.main__package--gamer .main__content ul li {
+    position: initial;
+    width: 80%!important;
+}
+}
+@media (max-width: 800px) and (min-width: 300px){
+   .main__package.main__package--gamer .main__content ul li {
+    position: initial;
+    width: 100%!important;
+}
+.col-sm-12.boxset .col-sm-6 {
+    padding: 0px;
+}
+.col-sm-12.boxset .col-sm-4 {
+    padding-bottom: 14px;
+}
+.btm-button {
+    width: 100%!important;
+}
+.col-sm-12.boxset {
+    width: 100%!important;
+    display: flow-root!important;
+}
+button.pulse-button {
+    margin: 0px!important;
+}
+button.pulse-button b {
+    font-size: 13px!important;
+}
+}
+.pulse-button {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+button {
+  margin: 15px auto;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 100px;
+  padding:15px 56px;
+  border: 0px solid #000;   
+  }
+button.pulse-button {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;margin-right: 20px;
+margin-left: 20px;
+}
+button.pulse-button-hover {
+  animation: colorShift 10000ms infinite ease-in;
+}
+button:hover,
+button:focus {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in, hoverShine 200ms;
+}
+@keyframes colorShift {
+  0%, 100% {
+      background: #90298d;
+  }
+  33% {
+    background: #faab3b;
+  }
+}
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255,.4), 0px 0px 0px 0px rgba(255,255,255,1);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255,.2), 0px 0px 0px 10px rgba(255,255,255,0);
+  }
+}
+
+/* Declare shine on hover animation */
+@keyframes hoverShine {
+  0%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+  }
+  50%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+  }
+  100%{
+    background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 100%);
+  }
+}
+.btm-button {
+    width: 46%;
+    margin: auto;
+    text-align: center;
+    padding: 19px;
+    border-radius: 10px;
+}
+.col-sm-12.boxset {
+    width: 80%;
+    display: block ruby;
+    margin: auto;
+    display: flex;
+    padding-bottom: 21px;
+    padding-top: 7px;
+    text-align: center;
+}
+.col-sm-12.boxset .col-sm-4 {
+    float: initial;
+    margin: auto;
+    margin: 0px;
+    float: left!important;
+    text-align: center;
+}
+.coloxset {
+    margin: auto;
+    width: 50%;
+    display: flex;
+}
+.card__tag .points p {
+    color: #3bb0c9!important;
+    font-size: 2rem!important;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+p.price-b {
+    padding-top: 12px;
+    padding-bottom: 12px!important;
+}
+.newprod img {
+    width: 80%;
+}
+.newprod .points p {
+   /* color: #3bb0c9 !important;
+    font-size: 3em !important;*/
+}
+.btn-info {
+    color: #fff;
+    background-color: #8f2f8d;
+    border-color: #17a2b8;
+    padding: 0px 12px !important;
+}
+.fas.fa-arrow-circle-down {
+  position: relative;
+}
+.ss {
+width: 100%;
+text-align: center;
+font-size:15px;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+.btn-group-lg > .btn, .btn-lg {
+    width: 90% !important;
+}
+.btn {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn-group-lg > .btn, .btn-lg {
+    padding: 0px 0px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    right:0px!important;
+top:0px!important;
+    text-align: center;
+    width: 100%!important;
+    margin: auto;
+    position: relative!important;
+}
+.wrap-center-frm.promo {
+    padding-bottom: 0px;
+    background: none;
+    display: flow-root;
+    width: 100% !important;
+    padding-bottom: 2px !important;
+    padding-top: 8px;
+}
+.wrap-center-frm {
+    display: contents;
+}
+.col-sm-12.channel-advs {
+    width: 100%;
+}
+.rowset-bank {
+    margin-bottom: 14px!important;
+padding:0px 0px 0px 0px !important;
+}
+.col-sm-12.paket-adds {
+  width: 100%;
+padding-top: 20px;
+padding-bottom: 5px;
+}
+.col-sm-12.paket-adds .col-sm-12 {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.col-sm-12.paket-add .col-sm-12 {
+    padding-bottom: 25px;
+    width: 70%;
+    margin: auto;
+    padding-top: 15px;
+}
+.ext {
+text-align: center;
+    color: #a14e9e;
+    font-size: 14px;
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 23px;
+}
+.col-sm-12.channel-adv {
+    display: block;
+    margin: auto;
+    width: 71%;
+    padding-top: 30px;
+    padding-bottom: 27px;
+}
+.conten-bisnis-wrap h1 {
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 0px;
+    font-weight: bold !important;
+}
+.wrap-tab-fixed-center h1 span {
+    color: #32b0c7;
+    padding-right: 10px;
+    font-weight: bold;
+}
+.set-two p {
+    display: contents;
+}
+.card__label {
+    display: none;
+}
+.newprod .card__desc {
+    margin-top: 5px;
+}
+.newprod .card__desc {
+    padding-top: 0px !important;
+}
+.newprod .card__content {
+    margin: 0px;
+    padding: 0px;
+}
+  .style-bank .col-sm-6 {
+}
+.style-bank .btn.btn-lg.btn-info {
+background-color: #fff;
+border: 1px solid #a0a0a0;
+}
+.style-bank .btn-info {
+color: #a0a0a0;
+border-color: #84409e;
+position: absolute;
+top: 46px;
+right: 48px;
+width: 24px;
+height: 27px;
+}
+.btn-group-lg > .btn, .btn-lg {
+padding: 0px 0px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px;
+text-align: center;
+width: 4%;
+margin: auto;
+right: 34px;
+position: absolute;
+top: 8px;
+}
+.style-bank-p{
+  position: absolute;top:0px;
+}
+.style-bank-img {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+}
+.style-bank-img img {
+  max-width: 25%;
+  height: auto;
+}
+.rowset-bank{
+box-shadow: 0 5px 25px 2px rgba(53,64,90,.2);
+background-color: #fff;
+padding: 10px 32px 10px 32px;
+border-radius: 5px;
+}
+.wrap-center-frm {
+    padding-bottom:50px;
+    width: 46%;
+    margin: auto;
+}#wrapset-term {
+    width: 100%!important;
+padding: 20px 20px 20px 20px !important;
+margin-top: 12px;
+margin-bottom: 22px;
+}
+#wrapset-term {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 16px!important;
+    border-radius: 10px;
+}
+.wrap-center-frm {
+    padding-bottom:0px;
+}
+</style>
