@@ -1,0 +1,66 @@
+<style>
+  .style-bank .col-sm-6 {
+}
+.style-bank .btn.btn-lg.btn-info {
+background-color: #fff;
+border: 1px solid #a0a0a0;
+}
+.style-bank .btn-info {
+color: #a0a0a0;
+border-color: #84409e;
+position: absolute;
+top: 46px;
+right: 48px;
+width: 24px;
+height: 27px;
+}
+.btn-group-lg > .btn, .btn-lg {
+padding: 0px 0px;
+font-size: 18px;
+line-height: 1.3333333;
+border-radius: 6px;
+text-align: center;
+width: 4%;
+margin: auto;
+right: 34px;
+position: absolute;
+top: 8px;
+}
+.style-bank-p{
+  position: absolute;top:0px;
+}
+.style-bank-img {
+  width: 100%;
+  height: auto;
+  padding-right: 12px;
+}
+.style-bank-img img {
+  max-width: 25%;
+  height: auto;
+}
+.rowset-bank{
+box-shadow: 0 5px 25px 2px rgba(53,64,90,.2);
+background-color: #fff;
+padding: 10px 32px 10px 32px;
+border-radius: 5px;
+}
+.wrap-center-frm {
+    padding-bottom:50px;
+    width: 46%;
+    margin: auto;
+}#wrapset-term {
+    width: 100%!important;
+padding: 20px 20px 20px 20px !important;
+margin-top: 12px;
+margin-bottom: 22px;
+}
+#wrapset-term {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 16px!important;
+    border-radius: 10px;
+}
+.wrap-center-frm {
+    padding-bottom:0px;
+}
+</style>
