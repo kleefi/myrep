@@ -1,0 +1,17 @@
+<style>
+@media (min-width: 768px) and (max-width:992px)
+{
+ .col-md-3{
+  flex:0 0 50%;
+  max-width:50%;
+  }
+}
+
+@media (min-width: 993px)
+{
+ .col-md-3{
+  flex:0 0 25%;
+  max-width:25%;
+  }
+}
+</style>
