@@ -1,0 +1,320 @@
+<style>
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+.background::after {
+  content: '';
+    background: #993090!important;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 900px) {
+  .background {
+    padding: 0 25px 25px;
+  }
+}
+.containers {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 1140px;
+  width: 100%;
+}
+.panel {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.panel-2 {
+  background-color: #fff;
+  padding: 0 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  background:#993090;
+}
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+.pricing-table-2 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 20px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-plan {
+  border-bottom: 1px solid #dae0e4;
+  padding: 25px;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    /*border-right: 1px solid #dae0e4;*/
+    flex-basis: 100%;
+    padding: 0 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 50%;
+}
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.pricing-features {
+  color: #444;
+  letter-spacing: 1px;
+  padding-inline-start:0;
+  text-transform: none;
+}
+.pricing-features-item {
+  border-top: 1px solid #cccccc;
+  font-size: .8rem;
+  line-height: 1.5;
+  padding: 15px 0;
+  text-align: left;
+  list-style-type: none;
+  text-transform: none;
+  text-align: center;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+.pricing-price {
+  color: #64309b;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline;
+}
+a.pricing-button{
+  background-image: linear-gradient(to right,#993090,#662b81);
+  color:#ffffff;
+}
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  /*padding: 15px 35px;*/
+  padding: 10px 26px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+.selengkapnya{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: -10px;
+}
+.selengkapnya a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bold;
+}
+.selengkapnya a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+.syarat{
+  font-size: .6rem;
+  text-transform:normal!important;
+}
+.container.cta{
+  width: fit-content;
+}
+.pricing-plan.plan-b{
+  border-right:1px solid #dae0e4;
+  border-left: 1px solid #dae0e4;
+}
+@media (max-width: 900px) {
+.pricing-plan.plan-b{
+  border-right:0;
+  border-left:0;
+}
+}
+#paket-lengkap{
+  border-radius: 0;
+  margin-top: 1%;
+}
+/*[data-toggle="selengkapnya"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="selengkapnya"]:not(.collapsed) .if-collapsed {
+  display: none;
+}*/
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}
+.free-router{
+  text-align: center;
+  /*float: left;*/
+  padding: 5px 20px;
+  background: #682c82;
+  border-radius: 25px;
+  /*margin-left: -200px;*/
+  /*position: absolute;*/
+  color: #fff;
+  font-size: 12px;
+  margin-top: -20px;
+}
+</style>
+
+
+<div class="background">
+  
+  <div class="containers">
+    
+    <div class="panel pricing-table">
+      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-30.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">VALUE</h2>
+        <!-- <h3 class="pricing-header">COMBO</h3> -->
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Best for 5 to 7 devices at the same time</li>
+        </ul>
+        <span class="pricing-price">Rp. 305.455</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=37" class="pricing-button">I Want This</a>
+      </div>
+      <div class="pricing-plan plan-b">
+        <!-- <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-50.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">FAST</h2>
+        <!-- <h3 class="pricing-header">COMBO</h3> -->
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Best for 8 to 12 devices at the same time</li>
+        </ul>
+        <span class="pricing-price">Rp. 369.092</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=38" class="pricing-button is-featured">I Want This</a>
+      </div>      
+      <div class="pricing-plan plan-b">
+        <!-- <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-100.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">NOVA</h2>
+        <!-- <h3 class="pricing-header">COMBO</h3> -->
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Best for 12 to 16 devices at the same time</li>
+        </ul>
+        <span class="pricing-price">Rp. 423.637</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=39" class="pricing-button">I Want This</a>
+      </div>
+
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-150-gamer.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">GAMER</h2>
+        <!-- <h3 class="pricing-header">COMBO</h3> -->
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Best for 14 to 18 devices at the same time</li>
+        </ul>
+        <span class="pricing-price">Rp. 614.546</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=40" class="pricing-button">I Want This</a>
+      </div>
+
+    </div>
+
+    <div id="paket-lengkap" class="panel pricing-table collapse">
+      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <!-- <img src="https://indihome.web.id/wp-content/uploads/2021/04/Kecepatan-Internet-IndiHome-20-Mbps.jpg" alt="" class="pricing-img"> -->
+        <!-- <h2 class="pricing-header">SONIC</h2> -->
+        <!-- <h3 class="pricing-header">COMBO</h3> -->
+        <!-- <ul class="pricing-features"> -->
+          <!-- <li class="pricing-features-item">Best for 14 to 18 devices at the same time</li> -->
+        <!-- </ul> -->
+        <!-- <span class="pricing-price">Rp. 708.182</span>  -->
+        <!-- <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span> -->
+        <!-- <span class="syarat">*Exclude PPN 10%</span> -->
+        <!-- <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=34" class="pricing-button">I Want This</a> -->
+      </div>
+      <div class="pricing-plan plan-b">
+        <!-- <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img"> -->
+        <!-- <img src="https://indihome.web.id/wp-content/uploads/2021/04/Kecepatan-Internet-IndiHome-20-Mbps.jpg" alt="" class="pricing-img">
+        <h2 class="pricing-header">GAMER</h2>
+        <h3 class="pricing-header">COMBO</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Penggunaan 14 hingga 18 perangkat sekaligus / 3 gamer sekaligus</li>
+        </ul>
+        <span class="pricing-price">Rp. 744.546</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=40" class="pricing-button is-featured">I Want This</a> -->
+      </div>      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+<!--         <img src="https://indihome.web.id/wp-content/uploads/2021/04/Kecepatan-Internet-IndiHome-20-Mbps.jpg" alt="" class="pricing-img">
+        <h2 class="pricing-header">GAMER</h2>
+        <h3 class="pricing-header">COMBO</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item">Penggunaan 14 hingga 18 perangkat sekaligus / 3 gamer sekaligus</li>
+        </ul>
+        <span class="pricing-price">Rp. 744.546</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ month</span>
+        <span class="syarat">*Exclude PPN 10%</span>
+        <a href="#/" class="pricing-button">I Want This</a> -->
+      </div>
+    </div>
+
+
+<!--     <div class="panel-2 pricing-table-2">      
+        <div class="selengkapnya">
+          <a class="collapsed" href="#paket-lengkap" data-toggle="collapse">
+            <p class="if-collapsed pading">Lihat Paket Lengkap</p><p class="if-not-collapsed pading-2">Tutup</p>
+          </a>
+        </div>
+    </div> -->
+
+</div>
+</div>
