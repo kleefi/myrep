@@ -1,0 +1,268 @@
+<style>
+@media (max-width: 800px) and (min-width: 300px){
+.main__package .main__header > h2 {
+    font-size: 3rem !important;
+}
+.logohead-gamer {
+    max-width: 60% !important;
+}
+.col.text-center.section__text p {
+    width: 90% !important;
+}
+}
+</style>
+
+<style>
+@media (max-width: 1200px) and (min-width: 800px){
+.logohead-gamer {
+    max-width: 60% !important;
+    padding-top: 113px;
+}
+}
+</style>
+
+<style>
+@media (max-width: 741px) and (min-width: 1000px){
+.logohead-gamer {
+    padding-top: 113px;
+}
+}
+</style>
+
+<style>
+.logohead-gamer {
+    max-width: 37%;
+    margin: auto;
+    display: block;
+    padding-bottom: 40px;
+}
+.main__package .main__header > h2 {
+    font-size: 3rem !important;
+}
+.main__header span {
+ color: #b9b9b9;
+font-size: 1.4em;
+max-width: 87%;
+margin: auto;
+display: block;
+}
+.main__header h2 {
+    color: #fff;
+}
+section.section.section--banner {
+    padding-top: 28px !important;
+}
+.jumbotron__distract {
+    margin-top: -242px!important;
+}
+section#gamer-head {
+    padding: 0px;
+}
+  .main{background:#111 url(http://myrepublic.co.id/wp-content/uploads/2019/02/gamer-head-bg.jpg) no-repeat center top !important; background-size:100% auto !important;}
+  .hide,.bare--header,.main__additional,#channels,#programs{display:none !important;}
+  .dark-bg{
+    background:url(http://myrepublic.co.id/wp-content/uploads/2019/02/gamer-head-bg.jpg) no-repeat center center !important;
+    background-size:cover;
+  }
+  */#gamer-head img{max-width:480px; margin-top:0px;}*/
+  .jumbotron__header{display:none !important;}
+  .jumbotron__distract{width:100% !important; background:none !important; padding:0 !important; margin:-200px auto -60px auto;}
+  .jumbotron__distract .content.cover{background-size:auto 60%;}
+  iframe#gamer-trl{
+    box-shadow:0 3px 5px #0008 !important; 
+    margin:0 auto !important; 
+    display:block;
+    background:#333;
+    padding:20px;
+  }
+  #ultra-fast{padding-bottom:0; padding-top:0;}
+  #stable-latency{
+    -webkit-clip-path: polygon(5% 20%, 10% 5%, 95% 5%, 95% 80%, 90% 95%, 5% 95%);
+    clip-path: polygon(5% 20%, 10% 5%, 95% 5%, 95% 80%, 90% 95%, 5% 95%);
+    padding-top:3rem; padding-bottom:3rem;
+  }
+  #stable-latency .section__text > h2{color:#FFF;}
+  #perks{background:url(http://myrepublic.co.id/wp-content/uploads/2019/02/gamer-perks-bg.jpg) no-repeat center center; background-size:cover; -webkit-clip-path: polygon(0% 0%, 45% 0, 50% 10%, 55% 0, 100% 0%, 100% 100%, 55% 100%, 50% 90%, 45% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 45% 0, 50% 10%, 55% 0, 100% 0%, 100% 100%, 55% 100%, 50% 90%, 45% 100%, 0% 100%);}
+  #perks .row{padding:1.5rem 7.5%;}
+  #perks .row .col{text-align:center; color:#FFF; padding:0 5rem;}
+  #perks .row .col h3{color:#FBB03B}
+  #perks .row .col img{height:240px; width:auto; max-width:300px;}
+  .main__package .main__header > h2{font-size:5rem;}
+  .section__text > h2{color:#FFF;}
+  .section__text p{color:#CCC;}
+  li.prod-single{
+    padding-top:0;
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
+  }
+  li.prod-single .card.gamer{
+    background:#333 !important;
+    overflow:initial !important;
+    padding:20px 10%;
+  }
+  li.prod-single .card__header > h3{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  li.prod-single .card__header .card__tag p {
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  li.prod-single .card__header .card__tag span {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+  li.prod-single ul.card__list{
+    display:flex;
+    border-bottom:initial;
+  }
+  li.prod-single ul.card__list li{
+    display: block;
+    flex: 0 0 25%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+  li.prod-single ul.card__list > li .icon{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  li.prod-single .card__desc{display:none;}
+  li.prod-single .card__footer {
+    bottom: -20px !important;
+    width: 50% !important;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    border:3px solid #111;
+  }
+  #latency{
+    background:url(http://myrepublic.co.id/wp-content/uploads/2019/02/gear-bg.jpg) no-repeat center bottom;
+    background-size:cover;
+  }
+  #latency .section__text{
+    flex:0 0 100%;
+    max-width:100%;
+    margin-bottom:2.5rem;
+  }
+  #latency .section__text h2,
+  #latency .section__text p{
+    color:#FFF;
+  }
+  #latency .section__text h2{
+    font-size:4rem !important;
+  } 
+  @media screen and (min-width: 992px){
+    iframe#gamer-trl{
+      width:1000px; 
+      height:calc(1000px * 0.56);
+    }
+    #network-routing .section__image > img {
+      position:absolute !important;
+      bottom:-1px;
+      left:10%;
+      height: 400px;
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 579px) and (min-width: 320px){
+  #latency .section__text h2 {
+    font-size: 3rem !important;
+}
+section.section.section--banner {
+
+    padding-top: 100px !important;
+}
+section.section.section--banner {
+    padding-top: 200px !important;
+}
+/*#gamer-head img {
+    max-width: 480px;
+    margin-top: 0px !important;
+}*/
+    /*#gamer-head img{
+      width:50%;
+      margin-top:120px;
+    }*/
+    #network-routing .section__image > img {
+      position:relative !important;
+    }
+    .main{background-size:260% auto !important;}
+    .main .section{padding-top:2rem; padding-bottom:2rem;}
+    .jumbotron__distract .content.cover {
+      background-size: auto 40% !important;
+    }
+    iframe#gamer-trl{
+      width:85vw; 
+      height:calc(85vw * 0.56);
+    }
+    #stable-latency{
+      padding-top:5rem; padding-bottom:5rem;
+      clip-path:polygon(5% 20%, 20% 5%, 94% 5%, 95% 80%, 80% 95%, 5% 95%);
+      -webkit-clip-path:polygon(5% 20%, 20% 5%, 94% 5%, 95% 80%, 80% 95%, 5% 95%);
+    }
+    #perks{clip-path:initial; -webkit-clip-path:initial;}
+    #perks .row .col{padding:1.25rem 1rem;}
+    li.prod-single .card.gamer {padding: 0;}
+    li.prod-single .card__header > h3 {font-size: 3rem;}
+    li.prod-single .card__header .card__tag p {font-size: 2rem;}
+    li.prod-single ul.card__list {flex-wrap: wrap;}
+    li.prod-single ul.card__list li {
+      flex: 0 0 50%;
+      font-size: 1.25rem;
+      line-height: 1rem;
+      margin: 1rem 0;
+    }
+    li.prod-single .card__footer {
+      bottom: 20px !important;
+      font-size: 13px;
+      border:none;
+    }
+  }
+</style>
+
+
+<style>
+@media (min-width: 1200px) {
+  .main__package ul.main__content > li {
+    max-width: 20%;
+  }
+.main__package--gamer .main__content > ul > li {
+    max-width: 20%;
+}
+.card__header .card__tag .points p {
+    font-size: 4.5rem;
+}
+.icon img {
+    width: 12px;
+    height: 12px;
+}
+.card__header > h3 {
+    font-size: 1.50rem;
+}
+.card__header .card__tag .value > p {
+    font-size: 1.4rem;
+}
+.card__header .card__tag .value > span {
+    font-size: 1rem;
+}
+.card__desc > ul > li {
+    font-size: 11px;
+}
+.card__list > li .icon {
+    font-size: 11px;
+}
+.card__list > li {
+    font-size: 11px;
+}
+}
+.main__banner>.container{width:fit-content;}
+</style>
