@@ -1,0 +1,111 @@
+<style>
+/* ---- MOBILE ---- */
+@media (min-width: 300px) and (max-width: 800px){
+.btn-group-lg > .btn, .btn-lg {
+    width: 8%;
+}
+.imgset-sm {
+    width: 100%;
+}
+.col-sm-12.sme1 {
+    width: 100%;
+}
+.col-sm-12.sme1 {
+    margin: 0px;
+}
+.txt-bis.ext h1 {
+    width: 100%;
+}
+.col-sm-12.sme1 .col-sm-4 {
+    font-size: 13px;
+}
+#mtabs li {
+    width: 50%;
+}
+.txt-bis h2 {
+    font-size: 1em;
+    line-height: 1.7em;
+    padding-top: 12px;
+}
+.conten-bisnis-wrap h1 {
+    margin: 0px!important;
+    padding: 0px!important;
+    font-size: 1.7em!important;
+    margin: auto;
+    font-weight: 600!important;
+    width: 100%;
+}
+.set-a {
+    font-size: 1em;
+}
+h1.jdl.set {
+   font-size: 29px;
+width: 80%;
+margin: auto !important;
+display: block;
+}
+h1.jdl {
+    font-size: 1.8em;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    width: 100%;
+}
+.conten-bisnis-wrap {
+    top: 0px;
+}
+#mtabs ul {
+    margin: 0px;
+    padding: 0px;
+}
+.img-bis {
+ width: 100%;
+    padding: 0px;
+}
+.wrap-fixed-teas {
+    width: 100%;
+    display: block;
+}
+#mtabs {
+    width: 100%;
+}
+.wrap-tab-fixed-center {
+    width: 100%;
+    display: block;
+    padding-top: 0px;
+}
+.txt-bis {
+    width: 80%;
+    margin: auto;
+    padding-top: 35px;
+}
+.tabel-one-set {
+    float: left;
+    width: 90%;
+}
+.tabel-one {
+    width: 100%;
+}
+.topbar-bisnis-wrap {
+    margin: auto;
+    width: 100%;
+    padding: 70px 40px 60px 40px;
+}
+.topbar-bisnis-wrap h1 img {
+    width: 100%;
+}
+.conten-bisnis-wrap h1 {
+font-size: 1.3em;
+   margin: auto !important;
+    font-weight: 600!important;
+    width: 80%;
+}
+.img-bisnis {
+   top: -51px;
+}
+.conten-bisnis {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+}
+</style>
