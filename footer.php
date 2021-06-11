@@ -58,6 +58,26 @@
             <!--<div class="footer-tematik-center"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/TEMATIK-FOOTER-RIGHT-min.png"></div>-->
         </div>
         <div class="container">
+          <!-- add branch link to WA telesales - edited by charles simanjuntak -->
+          <ul class="footer__list footer__branch">
+
+          <h2 style="padding-bottom: 1rem;color: #6E2C83;font-size: 3rem;">Area Cakupan MyRepublic</h2>
+   
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bali</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bandung</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bekasi</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bogor</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Cibubur</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Depok</a></li>            
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Jakarta</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Malang</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Medan</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Palembang</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Semarang</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Surabaya</a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Tangerang</a></li>
+          </ul>
+          </br>
             <ul class="footer__list">
             <?php
             $display_list_footer = $dginit->setup_menu->display_list_footer($dg_menu);
