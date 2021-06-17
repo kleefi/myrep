@@ -567,14 +567,17 @@ favorit Anda dan keluarga.</div>
         <div class="main__banner bg--gradient">
             <div class="container cta">
                 <div class="main__header">
-                    <h2><?= __("Give us a call",'myrepublic_theme') ?> <strong>1500-818</strong></h2>
+                    <!-- <h2><?= __("Give us a call",'myrepublic_theme') ?> <strong>1500-818</strong></h2> -->
+                    <h2><?= __("Hubungi Kami",'myrepublic_theme') ?> <strong><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic" target="_blank" style="color:#fff;">08898-1500818</a></strong></h2>
                 </div>
                 <div class="main__btn">
-                    <a href="tel:0211500818">
-                        <i class="fas fa-phone"></i>
-                        <?= __("1500-818",'myrepublic_theme') ?>
+                  <!--   <a href="tel:0211500818">
+                        <i class="fas fa-phone"></i> -->
+                        <a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic" target="_blank">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <?= __("08898-1500818",'myrepublic_theme') ?>
                     </a>
-                    <a href="javascript:void(0)" data-toggle='modal' data-target='#scheduleCall'>
+                    <a class="hidden" href="javascript:void(0)" data-toggle='modal' data-target='#scheduleCall'>
                         <i class="fas fa-clock"></i>
                         <?= __("Schedule a call",'myrepublic_theme') ?>
                     </a>
