@@ -1,5 +1,3 @@
-
-application/x-httpd-php survei.php ( HTML document, ASCII text, with CRLF line terminators )
 <!DOCTYPE html>
 <html>
 <head>
