@@ -1,0 +1,615 @@
+<style>
+html {
+  scroll-behavior: smooth;
+}
+.background {
+  padding: 0 25px 25px;
+  position: relative;
+  width: 100%;
+}
+.background::after {
+  content: '';
+    background: #993090!important;
+  background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+  background: -webkit-linear-gradient(top, #60a9ff 0%,#4394f4 100%);
+  background: linear-gradient(to bottom, #60a9ff 0%,#4394f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a9ff', endColorstr='#4394f4',GradientType=0 );
+  height: 350px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 900px) {
+  .background {
+    padding: 0 25px 25px;
+  }
+}
+.containers {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 1140px;
+  width: 100%;
+}
+.panel {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.panel-2 {
+  background-color: #fff;
+  padding: 0 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  background:#993090;
+}
+.panel-2:hover {
+background-color:#17a2b8;
+}
+.pricing-table {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+.pricing-table-2 {
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 20px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-plan {
+  border-bottom: 1px solid #dae0e4;
+  padding: 25px;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    /*border-right: 1px solid #dae0e4;*/
+    flex-basis: 100%;
+    padding: 0 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 50%;
+}
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+.pricing-features {
+  color: #444;
+  letter-spacing: 1px;
+  padding-inline-start:0;
+  text-transform: none;
+}
+.pricing-features-item {
+  border-top: 1px solid #cccccc;
+  font-size: .8rem;
+  line-height: 1.5;
+  padding: 15px 0;
+  text-align: left;
+  list-style-type: none;
+  text-transform: none;
+  text-align: center;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #cccccc;
+}
+.pricing-price {
+  color: #64309b;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline;
+}
+a.pricing-button{
+  background-image: linear-gradient(to right,#993090,#662b81);
+  color:#ffffff;
+}
+a.pricing-button:hover{
+  background-image: linear-gradient(to right,#138496,#138496);
+  color:#ffffff;
+}
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  /*padding: 15px 35px;*/
+  padding: 10px 26px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  font-weight:bold;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+.selengkapnya{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: -10px;
+}
+.selengkapnya a{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bold;
+}
+.selengkapnya a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+.syarat{
+  font-size: .6rem;
+  text-transform:normal!important;
+}
+.container.cta{
+  width: fit-content;
+}
+.pricing-plan.plan-b{
+  border-right:1px solid #dae0e4;
+  border-left: 1px solid #dae0e4;
+}
+@media (max-width: 900px) {
+.pricing-plan.plan-b{
+  border-right:0;
+  border-left:0;
+}
+}
+#paket-lengkap{
+  border-radius: 0;
+  margin-top: 1%;
+}
+/*[data-toggle="selengkapnya"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="selengkapnya"]:not(.collapsed) .if-collapsed {
+  display: none;
+}*/
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}
+.free-router{
+  text-align: center;
+  /*float: left;*/
+  padding: 5px 20px;
+  background: #682c82;
+  border-radius: 25px;
+  /*margin-left: -200px;*/
+  /*position: absolute;*/
+  color: #fff;
+  font-size: 12px;
+  margin-top: -20px;
+  font-weight:600;
+}
+</style>
+
+<div id="magic-wifi-bg">
+<div class="magic-header animated bounceInDown">
+ <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/MAGIC-WIFI-webbanner-01-1.jpg">
+<span class="animated bounce"></span>
+</div>
+
+<!--add table pricing-->
+
+
+<div class="background">
+  
+  <div class="containers">
+    
+    <div class="panel pricing-table">
+      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-20.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">JET</h2>
+        <h3 class="pricing-header">COMBO TV 66 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 4 perangkat </li>
+        </ul>
+        <span class="pricing-price">Rp. 290.000</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="#teaser-magicwifi" class="pricing-button">Saya Mau Ini</a>
+      </div>
+      <div class="pricing-plan plan-b">
+        <!-- <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-30.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">VALUE</h2>
+        <h3 class="pricing-header">COMBO TV 75 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 7 perangkat </li>
+        </ul>
+        <span class="pricing-price">Rp. 362.728</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="#teaser-magicwifi" class="pricing-button is-featured">Saya Mau Ini</a>
+      </div>      
+      <div class="pricing-plan">
+        <!-- <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-50.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">FAST</h2>
+        <h3 class="pricing-header">COMBO TV 81 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 12 perangkat </li>
+        </ul>
+        <span class="pricing-price">Rp. 444.546</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=64" class="pricing-button">Saya Mau Ini</a>
+      </div>
+    </div>
+
+    <div id="paket-lengkap" class="panel pricing-table collapse">
+      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-100.png" alt="" class="pricing-img">
+        <p class="free-router">Termasuk Router Pro</p>
+        <h2 class="pricing-header">NOVA</h2>
+        <h3 class="pricing-header">COMBO TV 81 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 16 perangkat </li>
+        </ul>
+        <span class="pricing-price">Rp. 608.182</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=33" class="pricing-button">Saya Mau Ini</a>
+      </div>
+      <div class="pricing-plan plan-b">
+        <!-- <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-150.png" alt="" class="pricing-img">
+        <p class="free-router">Termasuk Router Pro</p>
+        <h2 class="pricing-header">SONIC</h2>
+        <h3 class="pricing-header">COMBO TV 81 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 18 perangkat </li>
+        </ul>
+        <span class="pricing-price">Rp. 708.182</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=34" class="pricing-button is-featured">Saya Mau Ini</a>
+      </div>      
+      <div class="pricing-plan">
+        <!-- <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"> -->
+        <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Speedometer-150-gamer.png" alt="" class="pricing-img">
+        <p class="free-router">Termasuk Router Pro</p>
+        <h2 class="pricing-header">GAMER</h2>
+        <h3 class="pricing-header">COMBO TV 81 CH.</h3>
+        <ul class="pricing-features">
+          <li class="pricing-features-item"><b>Kuota Tanpa Batas</b></br></br>Cocok untuk penggunaan sampai dengan 18 perangkat  / 3 gamer </li>
+        </ul>
+        <span class="pricing-price">Rp. 744.546</span> <span style="font-size:12px;display: inline;font-weight: bold;">/ bulan</span>
+        <span class="syarat">*Harga belum termasuk PPN 10%</span>
+        <a href="https://sayamau.myrepublic.net.id/index.php/ncop/register/?source=mainpage&product_id=35" class="pricing-button">Saya Mau Ini</a>
+      </div>
+    </div>
+
+
+    <div class="panel-2 pricing-table-2">      
+        <div class="selengkapnya">
+          <a class="collapsed" href="#paket-lengkap" data-toggle="collapse">
+            <p class="if-collapsed pading">Lihat Paket Lengkap</p><p class="if-not-collapsed pading-2">Tutup</p>
+          </a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!--close add table pricing-->
+
+<!--add untuk info berlangganan-->
+
+<!-- <div class="ext">Untuk info berlangganan paket COMBO Internet + TV mohon hubungi <a href="tel:1500 818 " style="color: #a14e9e;text-decoration: underline;">1500 818</a></div> -->
+<div class="ext">Untuk info berlangganan paket COMBO Internet + TV mohon hubungi melalui chat di nomor <a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic" style="color: #a14e9e;text-decoration: underline;">08898-1500818</a></div>
+
+<!--close untuk info berlangganan-->
+
+<!--add paket TV information-->
+
+<div class="wrap-center-frm">
+<div class="col-sm-12">
+<div class="rowset-bank">
+ <button type="button-satu" class="btn btn-lg btn-info collapsed" data-toggle="collapse" data-target="#demo-satu" aria-expanded="false"><div class="ss">Informasi Paket TV <span><i class="fas fa-arrow-circle-down"></i></span></div>
+
+</button>
+
+  <div id="demo-satu" class="collapse">
+<div class="col-sm-12 channel-advs">
+    
+<img src="https://myrepublic.co.id/wp-content/uploads/2019/02/CHANNELS-for-web-JUN21.png" style="padding-top: 16px;">
+<!--<img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Combo-forweb-BasicTV-min.png" style="padding-top: 16px;">-->
+</div>
+
+<div class="col-sm-12 paket-adds">
+
+   <div class="col-sm-12"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/addon-Packages-APR21-TV1.jpg"></div>
+
+    <div class="col-sm-12"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/addon-Packages-APR21-TV2.jpg"></div>
+
+    <div class="col-sm-12" style="display:none;"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Combo-forweb-addon3-min.png"></div>
+   
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!--close paket TV information-->
+
+<h1 style="text-align: center;font-size: 2em;line-height: 43px;">WiFi Rumah Unlimited Ultra Cepat</h1>
+
+<div class="teaser-wifi" style="width: 80%;padding: 1px 0px 40px;line-height: 30px;margin: auto;text-align:center;">Rasakan sensasi jelajah internet tanpa batas di rumah dengan Magic WiFi dari MyRepublic. Magic WiFi adalah WiFi rumah yang dapat menciptakan jaringan untuk seluruh rumah secara menyeluruh di setiap sudutnya. Tak akan ada lagi masalah terbatasnya sinyal di dead zone atau area tak terjangkaunya sinyal seperti area belakang rumah. <br>
+Cara kerjanya adalah dengan menggabungkan beberapa router sekaligus ke dalam jaringan yang sama. Router utama, yang terkoneksi ke modem, akan terhubung dengan beberapa router lain, biasa disebut sebagai node yang diletakkan di berbagai tempat berbeda di untuk memperluas cakupan sinyal WiFi.
+</div> 
+
+<div class="scroll-animations">
+<div class="row paket">
+        <div class="row iconmagic">
+
+      
+  <div class="col-sm-3 iconmagic-box animated">
+      <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/mw-1.png">
+      <div class="set-col">
+<input type="checkbox" class="read-more-state" id="post-1" />
+<p class="read-more-wrap" style="font-size: 1em;
+font-weight: 600;line-height:auto;
+color: #707172;">Sinyal Wifi Internet Ultra Cepat Menjangkau seluruh bagian rumah<br> <span class="read-more-target" style="font-weight: 300;line-height:auto;">Magic WiFi dari MyRepublic, WiFi Rumah Ultra Cepat dengan jangkauan luas yang bisa menjangkau seluruh bagian rumah anda. Dengan Mesh WiFi, router dipasangkan dengan satu atau lebih satelit yang dapat ditempatkan di seluruh rumah Anda. Satelit-satelit ini akan mengambil sinyal router dan memperkuatnya lebih jauh untuk seluruh rumah Anda, memastikan Anda mendapatkan lebih banyak cakupan Wifi rumah di area yang paling Anda butuhkan. Dengan menggunakan jaringan wireless/SSID tunggal, mesh WiFi memungkinkan Anda menikmati roaming/perpindahan yang mulus di seluruh rumah Anda tanpa harus berpindah jaringan/SSID secara manual.</span></p>
+<label for="post-1" class="read-more-trigger">Selengkapnya</label>
+</div>
+  </div>
+  
+
+
+  <div class="col-sm-3 iconmagic-box animated">
+      <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/mw-2.png">
+      <div class="set-col">
+<input type="checkbox" class="read-more-state" id="post-2" />
+<p class="read-more-wrap" style="font-size: 1em;
+font-weight: 600;line-height: auto;
+color: #707172;">Jelajah Internet dengan WiFi di rumah tanpa batas dan tanpa jeda <br> <span class="read-more-target" style="font-weight: 300;line-height:auto;">WiFi rumah dengan koneksi internet yang stabil super cepat dengan unlimited bandwith untuk segala kebutuhanmu dari tuntutan pekerjaan yang harus online sepanjang hari, belanja online untuk kebutuhan sehari hari hingga streaming game online</span></p>
+<label for="post-2" class="read-more-trigger">Selengkapnya</label>
+</div>
+  </div>
+  
+  <div class="col-sm-3 iconmagic-box animated">
+      <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/mw-3.png">
+      <div class="set-col">
+<input type="checkbox" class="read-more-state" id="post-3" />
+<p class="read-more-wrap" style="font-size: 1em;
+font-weight: 600;line-height: auto;
+color: #707172;">Koneksi Internet hingga 100 perangkat <br> <span class="read-more-target" style="font-weight: 300;line-height:auto;">Magic WiFi dari MyRepublic, WiFi Rumah Banyak provider WiFi rumah yang membatasi jumlah perangkat yang terhubung, tapi tidak dengan Magic WiFi dari MyRepublic. Anda bisa menghubungkan WiFi rumah Anda hingga 100 perangkat tanpa mengganggu kestabilan koneksi WiFi rumah Anda.</span></p>
+<label for="post-3" class="read-more-trigger">Selengkapnya</label>
+</div>
+  </div>
+  
+
+
+  <div class="col-sm-3 iconmagic-box animated">
+      <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/mw-4.png">
+     <div class="set-col">
+<input type="checkbox" class="read-more-state" id="post-4" />
+<p class="read-more-wrap" style="font-size: 1em;
+font-weight: 600;line-height: auto;
+color: #707172;">Fitur parental control <br> <span class="read-more-target" style="font-weight: 300;line-height:auto;">Magic WiFi dari MyRepublic sudah dilengkapi dengan fitur parental control untuk mencegah dampak buruk internet bagi anak – anak Anda. Dengan Parental control kita dapat memfilter atau menyeleksi situs yang aman, memantau aktivitas online anak Anda dan juga mengatur waktu penggunaan internet.</span></p>
+<label for="post-4" class="read-more-trigger">Selengkapnya</label>
+</div>
+  </div>
+  
+
+
+</div>
+
+
+
+
+<!-- testimoni-->
+ <div class="row magicwifi-center">
+  <div class="col-sm-6"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Testimoni-Magic-Wifi-shelly-web.png"></div>
+  <div class="col-sm-6"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Testimoni-Magic-Wifi-Novan-web.png"></div>
+</div> 
+<!-- testimoni-->
+
+
+
+    </div>
+
+ </div>
+
+
+
+
+
+<div class="row paket">
+
+<div class="col-sm-12 ma">
+
+  <div class="col-sm-6 ma-bg">
+     <img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Magic-wifi-tplink.png">
+  </div>
+
+  <div class="col-sm-6">
+   <div class="center-mw">
+ 
+<!--
+     <div class="col-sm-12 ma-price">
+       <div class="col-sm-6 left"><span><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/icon-mw_03.jpg"</span>Speed download</div>
+       <div class="col-sm-6 right" style="padding-left:31px;">up to <b>200</b>Mbps</div>
+     </div>
+
+     <div class="col-sm-12 ma-price">
+       <div class="col-sm-6 left"><span><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/icon-mw_06.jpg"</span>Speed upload</div>
+       <div class="col-sm-6 right" style="padding-left:31px;">up to <b>100</b>Mbps</div>
+     </div>
+
+     <div class="col-sm-12 ma-price">
+       <div class="col-sm-6 left"><span><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/icon-mw_08.jpg"</span>Kuota</div>
+       <div class="col-sm-6 right" style="padding-left:31px;"><b>unlimited</b></div>
+     </div>-->
+
+<div class="col-sm-12 dc"><b>Paket Magic Wi-Fi</b></div>
+<div class="col-sm-12 price-dc">
+
+<div class="col-sm-6" style="border-right: 1px solid #7f2d88;">
+<div class="pricemws"><span>Rp</span>88.000<span style="font-style: italic;">NETT</span></div>
+<div class="pricemw">sewa per bulan</div>
+</div>
+
+<div class="col-sm-6">
+<div class="pricemws"><span>Rp</span>1.440.000<span style="font-style: italic;">NETT</span></div>
+<div class="pricemw">pembelian terpisah</div>
+</div>
+
+</div>
+  </div>
+</div>
+</div>
+
+<!--
+<div class="col-sm-12 box-mw">
+  <div class="col-sm-12 box-mw-center">
+<div class="abslt-mws"><p>ATAU<p></div>
+  <div class="col-sm-12 box-mw-right">
+   Dapat disewa dan digabungkan dengan paket internet lainnya seharga Rp <b>88.000</b>/bln 
+  </div>
+   </div>
+</div>-->
+
+
+
+    <div class="col-sm-4 headpaket">
+<div class="absolute-imgmc"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/diskon50.png"></div>
+        <div class="col-sm-4 bg-headpaket" style="border-radius: 30px 0px 0px 0px;">
+            <p class="nm-paket">Paket Magic Wi-Fi</p>
+            <p class="txt-paket">200</p>
+            <p class="mbps-paket">Mbps</p>
+        </div>
+        <div class="row contenpaket">
+            <div class="col-sm-4 bg-space">
+                <div class="col-sm-12">
+                    <div class="col-sm-6">Speed download</div>
+                    <div class="col-sm-6">up to 200Mbps</div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-6">Speed upload</div>
+                    <div class="col-sm-6">up to 100Mbps</div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-6">Kuota</div>
+                    <div class="col-sm-6">unlimited</div>
+                </div>
+                <!--
+                <p class="price-wifi">Rp.629.000</p>
+                <p class="netbulan">Nett per bulan</p>
+                <p class="nm-paket" style="text-align:center;">Nikmati  
+                 potongan harga 50%
+                </p>-->
+<div class="mwset">
+<div class="col-sm-6">
+  <div class="pricemws">Rp. 88.000 NETT</div>
+<div class="pricemw">sewa per bulan</div>
+</div>
+<div class="col-sm-6 bgmw">
+  <div class="pricemws">Rp. 1.440.000 NETT</div>
+<div class="pricemw">pembelian terpisah</div>
+</div>
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="btn-fixed">
+         <input type="button" class="scroll_button" style="font-weight:700;border-radius: 0px 0px 0px 30px;" value="LANGGANAN SEKARANG" onclick="scroll_to_div('div2')">
+        </div>
+        
+    </div>
+
+    <div class="col-sm-4 headpaket">
+        <div class="col-sm-4 bg-headpaket">
+            <p class="nm-paket">Paket Magic Wi-Fi</p>
+            <p class="txt-paket">Add-on</p>
+            <p class="mbps-paket" style="color:#aa54a0;">-</p>
+        </div>
+        <div class="row contenpaket">
+            <div class="col-sm-4 bg-space">
+                <p class="teaser-magic">Dapat disewa dan digabungkan dengan pilihan paket internet MyRepublic lainnya</p>
+                <p class="price-wifi">Rp.88.000</p>
+                <p class="netbulan">Nett per bulan</p>
+                <div class="space-magic"></div>
+
+            </div>
+        </div>
+        <div class="btn-fixed">
+         <input type="button" class="scroll_button" value="SAYA MAU INI" onclick="scroll_to_div('div2')">
+        </div>
+    </div>
+
+    <div class="col-sm-4 headpaket">
+        <div class="col-sm-4 bg-headpaket" style="border-radius:0px 30px 0px 0px;">
+            <p class="nm-paket">Paket Magic Wi-Fi</p>
+            <p class="txt-paket">Beli</p>
+            <p class="mbps-paket" style="color:#aa54a0;">-</p>
+        </div>
+        <div class="row contenpaket">
+            <div class="col-sm-4 bg-space">
+                <p class="teaser-magic">Dapat dibeli dengan harga special khusus pelanggan MyRepublic</p>
+                <p class="price-wifi">Rp.1.440.000</p>
+                <p class="netbulan">Termasuk Pajak</p>
+                <div class="space-magic"></div>
+
+            </div>
+        </div>
+        <button type="button" class="btn magic" style="font-weight:700;border-radius: 0px 0px 30px 0px;">KUNJUNGI KANTOR CABANG KAMI</button>
+    </div>
+
+
+ <div id="teaser-magicwifi" class="teaser-magicwifi">
+<ul>
+<li>Pelanggan wajib berlangganan paket internet MyRepublic</li>
+<li>Paket sudah termasuk 2 unit Magic Wi-Fi</li>
+<li>Sementara hanya tersedia di area tertentu</li>
+</ul>
+<!--<p class="set-teaser-magic">Paket sudah termasuk 2 unit Magic Wi-Fi
+</p>-->
+</div>
+
+<div id="get-discounts" class="form-magicwifi">
+    <div id="div2" class="scroll_div"></div>
+[contact-form-7 id="197076" title="MyRepublic x TP-Link"]
+</div>
+</div>
+</div>
