@@ -12,10 +12,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
         <!-- Sweet alert -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+        <script>
+            $(document).ready(function () {
+                $("#getKompetitor").on("click", function (event) {
+                    var checkboxValues = [];
+                    $('input[type="checkbox"]:checked').each(function (index, elem) {
+                        checkboxValues.push($(elem).val());
+                    });
+                    $("#coba").html(checkboxValues.join(","));
+                });
+            });
+        </script>
     </head>
     <style type="text/css">
         html {
@@ -444,7 +455,7 @@
                     <!-- Cibubur -->
                     <div id="Cibubur" class="form-group" style="display: none;">
                         <select class="form-control js-example-basic-single" name="nama_cluster" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
-                           <option value="" selected disabled hidden>Pilih Nama Cluster</option>
+                            <option value="" selected disabled hidden>Pilih Nama Cluster</option>
                             <option value="Acropolis Selatan">Acropolis Selatan | HP:40 | FAT:26</option>
                             <option value="Acropolis Utara">Acropolis Utara | HP:61 | FAT:26</option>
                             <option value="America">America | HP:503 | FAT:267</option>
@@ -763,7 +774,7 @@
                     <!-- Jakarta -->
                     <div id="Jakarta" class="form-group" style="display: none;">
                         <select class="form-control js-example-basic-single" name="nama_cluster" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
-                           <option value="" selected disabled hidden>Pilih Nama Cluster</option>
+                            <option value="" selected disabled hidden>Pilih Nama Cluster</option>
                             <option value="Apartment Ambassador">Apartment Ambassador | HP:385 | FAT:125</option>
                             <option value="Apartment Cempaka Mas">Apartment Cempaka Mas | HP:890 | FAT:231</option>
                             <option value="Apartment Four Seasons">Apartment Four Seasons | HP:222 | FAT:157</option>
@@ -1058,7 +1069,7 @@
                     <!-- Medan -->
                     <div id="Medan" class="form-group" style="display: none;">
                         <select class="form-control js-example-basic-single" name="nama_cluster" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
-                           <option value="" selected disabled hidden>Pilih Nama Cluster</option>
+                            <option value="" selected disabled hidden>Pilih Nama Cluster</option>
                             <option value="Address Cempaka Madani">Address Cempaka Madani | HP:220 | FAT:27</option>
                             <option value="Bekala Asri Residence">Bekala Asri Residence | HP:248 | FAT:48</option>
                             <option value="Cemara Asri Tahap 3">Cemara Asri Tahap 3 | HP:275 | FAT:84</option>
@@ -1237,7 +1248,7 @@
                     <!-- Palembang -->
                     <div id="Palembang" class="form-group" style="display: none;">
                         <select class="form-control js-example-basic-single" name="nama_cluster" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
-                           <option value="" selected disabled hidden>Pilih Nama Cluster</option>
+                            <option value="" selected disabled hidden>Pilih Nama Cluster</option>
                             <option value="Afilla Permai">Afilla Permai | HP:174 | FAT:43</option>
                             <option value="Alam Raya Residence">Alam Raya Residence | HP:124 | FAT:37</option>
                             <option value="Arisma Sejahtera">Arisma Sejahtera | HP:187 | FAT:26</option>
@@ -2370,66 +2381,67 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="Pilih Kompetitor" style="display: block;">Kompetitor</label>
+                    <label for="Pilih Kompetitor" style="display: block;">Kompetitor</label>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="Biznet" id="BizNet">
-                    <label class="form-check-label" for="BizNet">
-                      BizNet
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="Biznet" id="BizNet" />
+                        <label class="form-check-label" for="BizNet">
+                            BizNet
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="CBN" id="CBN">
-                    <label class="form-check-label" for="CBN">
-                      CBN
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="CBN" id="CBN" />
+                        <label class="form-check-label" for="CBN">
+                            CBN
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="FirstMedia" id="FirstMedia">
-                    <label class="form-check-label" for="FirstMedia">
-                      FirstMedia
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="FirstMedia" id="FirstMedia" />
+                        <label class="form-check-label" for="FirstMedia">
+                            FirstMedia
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="Groovy" id="Groovy">
-                    <label class="form-check-label" for="Groovy">
-                      Groovy
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="Groovy" id="Groovy" />
+                        <label class="form-check-label" for="Groovy">
+                            Groovy
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="IndiHome" id="IndiHome">
-                    <label class="form-check-label" for="IndiHome">
-                      IndiHome
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="IndiHome" id="IndiHome" />
+                        <label class="form-check-label" for="IndiHome">
+                            IndiHome
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="Oxygen" id="Oxygen">
-                    <label class="form-check-label" for="Oxygen">
-                      Oxygen
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="Oxygen" id="Oxygen" />
+                        <label class="form-check-label" for="Oxygen">
+                            Oxygen
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="nama_kompetitor[]" type="checkbox" value="MNC Playmedia" id="MNC Playmedia">
-                    <label class="form-check-label" for="MNC Playmedia">
-                      MNC Playmedia
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="MNC Playmedia" id="MNC Playmedia" />
+                        <label class="form-check-label" for="MNC Playmedia">
+                            MNC Playmedia
+                        </label>
+                    </div>
 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" value="Transvision" id="Transvision">
-                    <label class="form-check-label" for="Transvision">
-                      Transvision
-                    </label>
-                  </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="nama_kompetitor" value="Transvision" id="Transvision" />
+                        <label class="form-check-label" for="Transvision">
+                            Transvision
+                        </label>
+                    </div>
+                    <textarea class="coba" id="coba" name="nama_kompetitorsss" readonly required oninvalid="this.setCustomValidity('Klik tombol cek koordinat terlebih dahulu')" oninput="setCustomValidity('')"></textarea>
+                    <!-- <input id="kompetitors" type="checkbox" name="nama_kompetitor" value="test" checked> -->
 
-
-<!--                     <select class="form-control js-example-basic-multiple" name="nama_kompetitor[]" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
+                    <!--                     <select class="form-control js-example-basic-multiple" name="kompetitor" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
                         <option value="" selected disabled hidden>Kompetitor</option>
                         <option value="IndiHome">IndiHome</option>
                         <option value="Biznet">Biznet</option>
@@ -2449,7 +2461,7 @@
                     </button>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-kirim btn-block">Kirim</button>
+                <button id="getKompetitor" type="submit" class="btn btn-primary btn-kirim btn-block">Kirim</button>
                 <button type="button" class="btn btn-primary btn-loading d-none btn-block" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Loading...
@@ -2480,8 +2492,8 @@
                         // reset form
                         // form.reset();
                         // alert('berhasil');
-                        Swal.fire('Berhasil', 'Data yang kamu input telah berhasil disimpan.', 'success').then(function(){
-                           location.reload();
+                        Swal.fire("Berhasil", "Data yang kamu input telah berhasil disimpan.", "success").then(function () {
+                            window.location.reload();
                         });
                         // window.location.reload();
                         console.log("Success!", response);
