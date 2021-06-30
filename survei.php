@@ -23,7 +23,7 @@
                     $('input[type="checkbox"]:checked').each(function (index, elem) {
                         checkboxValues.push($(elem).val());
                     });
-                    $("#coba").html(checkboxValues.join(","));
+                    $("#coba").html(checkboxValues.join(", "));
                 });
             });
         </script>
@@ -2438,20 +2438,7 @@
                             Transvision
                         </label>
                     </div>
-                    <textarea class="coba" id="coba" name="nama_kompetitorsss" readonly required oninvalid="this.setCustomValidity('Klik tombol cek koordinat terlebih dahulu')" oninput="setCustomValidity('')"></textarea>
-                    <!-- <input id="kompetitors" type="checkbox" name="nama_kompetitor" value="test" checked> -->
-
-                    <!--                     <select class="form-control js-example-basic-multiple" name="kompetitor" oninvalid="this.setCustomValidity('Pilih Cluster')" oninput="setCustomValidity('')">
-                        <option value="" selected disabled hidden>Kompetitor</option>
-                        <option value="IndiHome">IndiHome</option>
-                        <option value="Biznet">Biznet</option>
-                        <option value="Groovy">Groovy</option>
-                        <option value="CBN">CBN</option>
-                        <option value="FirstMedia">FirstMedia</option>
-                        <option value="Transvision">Transvision</option>
-                        <option value="MNC Playmedia">MNC Playmedia</option>
-                        <option value="Oxygen">Oxygen</option>
-                    </select> -->
+                    <textarea hidden="true" class="coba" id="coba" name="nama_kompetitorsss" readonly required oninvalid="this.setCustomValidity('Klik tombol cek koordinat terlebih dahulu')" oninput="setCustomValidity('')"></textarea>
                 </div>
                 <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                     <strong>Terima kasih!</strong><br />
