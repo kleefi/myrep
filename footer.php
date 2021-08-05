@@ -63,19 +63,19 @@
 
           <h2 style="padding-bottom: 1rem;color: #6E2C83;font-size: 3rem;">Area Cakupan MyRepublic</h2>
    
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bali</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bandung</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bekasi</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Bogor</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Cibubur</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Depok</a></li>            
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Jakarta</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Malang</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Medan</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Palembang</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Semarang</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Surabaya</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=Halo+MyRepublic%21&app_absent=0" target="_blank">Tangerang</a></li>
+            <li><a href="http://bit.ly/myrepBali" target="_blank">Bali</a></li>
+            <li><a href="http://bit.ly/myrepBdg" target="_blank">Bandung</a></li>
+            <li><a href="http://bit.ly/myrepBks" target="_blank">Bekasi</a></li>
+            <li><a href="http://bit.ly/myrepBgr" target="_blank">Bogor</a></li>
+            <li><a href="http://bit.ly/myrepCbr" target="_blank">Cibubur</a></li>
+            <li><a href="http://bit.ly/myrepDpk" target="_blank">Depok</a></li>            
+            <li><a href="http://bit.ly/myrepJkt" target="_blank">Jakarta</a></li>
+            <li><a href="http://bit.ly/myrepMlg" target="_blank">Malang</a></li>
+            <li><a href="http://bit.ly/myrepMdn" target="_blank">Medan</a></li>
+            <li><a href="http://bit.ly/myrepPlg" target="_blank">Palembang</a></li>
+            <li><a href="http://bit.ly/myrepSmrg" target="_blank">Semarang</a></li>
+            <li><a href="http://bit.ly/myrepSby" target="_blank">Surabaya</a></li>
+            <li><a href="http://bit.ly/myrepTgrg" target="_blank">Tangerang</a></li>
           </ul>
           </br>
             <ul class="footer__list">
@@ -124,13 +124,18 @@
                     <p>
                     &copy; <?= date("Y"); ?> MyRepublic Indonesia
                 </p>
+<!--active wa button on bottom when on mobile version - edited by charles simanjuntak -->
+				<div class="wa-mobile blinking"><a href="https://api.whatsapp.com/send/?phone=6288981500818&text=%5B%5D+Halo+MyRepublic%21&app_absent=0" target="_blank">Klik Untuk Berlangganan</a></div>
             </div>
         </div>
         <div class="footer__bottom bg--gradient">
             
         
                 <div class="tematik-bottom-fot-setleft"><img src="<?= $theme_url ?>images/member-sinarmas-logo.png" alt="Sinar Mas"></div>
-                <div class="tematik-bottom-fot-setright"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/logo-awards-1.png" style=""></div>  
+			<div class="tematik-bottom-fot-setright"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/Group-30-1.png" style=""></div>  
+			
+<!--                 <div class="tematik-bottom-fot-setright"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/logo-awards-terbaru.png" style=""></div>   -->
+<!-- 			<div class="tematik-bottom-fot-setright"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/logo-awards-1.png" style=""></div>   -->
                 <!-- <div class="tematik-bottom-fot-setright"><img src="https://myrepublic.co.id/wp-content/uploads/2019/02/LOGO-IDPBA-2020-BOLD-01.png" style=""></div>   -->
             </div>
             
@@ -157,9 +162,10 @@
                     </div>
                     <ul class="hamburger__list" data-widget='tree'>
                         <li>
-                            <a href="tel:<?= str_replace(' ', '', $call_center) ?>" >
+<!-- 							change phone number manually 1500 8180 to 1500 818 - edited by charles simanjuntak -->
+<!--                             <a href="tel:<?= str_replace(' ', '', $call_center) ?>" > --><a href="tel:1500818">
                                 <i class="fas fa-phone"></i>
-                                <?= $call_center ?>
+<!--                                 <?= $call_center ?> -->1500 818
                             </a>
                         </li>
                         <li>
