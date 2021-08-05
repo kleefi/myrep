@@ -1,0 +1,12 @@
+slider banner
+=============
+https://myrepublic.co.id/wp-json/wp/v2/mobile_slider
+
+kategori blog
+=============
+https://myrepublic.co.id/wp-json/wp/v2/posts?categories=95
+https://myrepublic.co.id/wp-json/wp/v2/posts?categories=95&page=2
+
+kategori
+=============
+https://myrepublic.co.id/wp-json/wp/v2/categories
