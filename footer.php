@@ -59,22 +59,22 @@
         </div>
         <div class="container">
           <!-- add branch link to WA telesales - edited by charles simanjuntak -->
-          <ul class="footer__list footer__branch">
+          <ul class="footer__list footer__branch kiri">
 
-          <h2 style="padding-bottom: 1rem;color: #6E2C83;font-size: 3rem;">Area Cakupan MyRepublic</h2>
+          <h2 class="judul-cakupan">Area Cakupan MyRepublic</h2>
    
-            <li><a href="http://bit.ly/myrepBali" target="_blank">Bali</a></li>
-            <li><a href="http://bit.ly/myrepBdg" target="_blank">Bandung</a></li>
-            <li><a href="http://bit.ly/myrepBks" target="_blank">Bekasi</a></li>
-            <li><a href="http://bit.ly/myrepBgr" target="_blank">Bogor</a></li>
-            <li><a href="http://bit.ly/myrepCbr" target="_blank">Cibubur</a></li>
-            <li><a href="http://bit.ly/myrepDpk" target="_blank">Depok</a></li>            
-            <li><a href="http://bit.ly/myrepJkt" target="_blank">Jakarta</a></li>
-            <li><a href="http://bit.ly/myrepMlg" target="_blank">Malang</a></li>
-            <li><a href="http://bit.ly/myrepMdn" target="_blank">Medan</a></li>
-            <li><a href="http://bit.ly/myrepPlg" target="_blank">Palembang</a></li>
-            <li><a href="http://bit.ly/myrepSmrg" target="_blank">Semarang</a></li>
-            <li><a href="http://bit.ly/myrepSby" target="_blank">Surabaya</a></li>
+            <li><a href="http://bit.ly/myrepBali" target="_blank">Bali</a></li> | 
+            <li><a href="http://bit.ly/myrepBdg" target="_blank">Bandung</a></li> | 
+            <li><a href="http://bit.ly/myrepBks" target="_blank">Bekasi</a></li> | 
+            <li><a href="http://bit.ly/myrepBgr" target="_blank">Bogor</a></li> | 
+            <li><a href="http://bit.ly/myrepCbr" target="_blank">Cibubur</a></li> | 
+            <li><a href="http://bit.ly/myrepDpk" target="_blank">Depok</a></li> |      
+            <li><a href="http://bit.ly/myrepJkt" target="_blank">Jakarta</a></li> | 
+            <li><a href="http://bit.ly/myrepMlg" target="_blank">Malang</a></li> | 
+            <li><a href="http://bit.ly/myrepMdn" target="_blank">Medan</a></li> | 
+            <li><a href="http://bit.ly/myrepPlg" target="_blank">Palembang</a></li> | 
+            <li><a href="http://bit.ly/myrepSmrg" target="_blank">Semarang</a></li> | 
+            <li><a href="http://bit.ly/myrepSby" target="_blank">Surabaya</a></li> | 
             <li><a href="http://bit.ly/myrepTgrg" target="_blank">Tangerang</a></li>
           </ul>
           </br>
