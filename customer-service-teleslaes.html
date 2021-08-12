@@ -1,0 +1,114 @@
+<ul class="footer__list footer__branch kiri">
+
+<h2 class="judul-cakupan" style="margin: 0;text-align: center;display: inline;">Customer Service</h2>
+<div class="nomor"><a href="tel:03613002818">Bali (0361) 3002818</a> | <a href="tel:02230001818">Bandung (022) 30001818</a> | <a href="tel:02130003818">Jakarta (021) 30003818</a> | <a href="tel:03416050818">Malang (0341) 6050818</a> | <a href="tel:06130000818">Medan (061) 30000818</a> | <a href="tel:07116054818">Palembang (0711) 6054818</a> | <a href="tel:02433003818">Semarang (024) 33003818</a> | <a href="tel:03160000818">Surabaya (031) 60000818</a></div>
+
+</ul>
+
+
+<ul class="footer__list footer__branch kanan">
+
+<h2 class="judul-cakupan" style="margin: 0;text-align: center;display: inline;">Telesales</h2>
+<div class="nomor"><a href="tel:03613002819">Bali (0361) 3002819</a> | <a href="tel:02230001819">Bandung (022) 30001819</a> | <a href="tel:02130003819">Jakarta (021) 30003819</a> | <a href="tel:03416050819">Malang (0341) 6050819</a> | <a href="tel:06130000819">Medan (061) 30000819</a> | <a href="tel:07116054819">Palembang (0711) 6054819</a> | <a href="tel:02433003819">Semarang (024) 33003819</a> | <a href="tel:03160000819">Surabaya (031) 60000819</a></div>
+
+</ul>
+
+
+<ul class="footer__list footer__branch kiri">
+    <h2 class="judul-cakupan" style="margin: 0;text-align: center;display: block;">Customer Service</h2>
+    <select id="customer-service">
+    <option value="03613002818">Bali (0361) 3002818</option>
+    <option value="02230001818">Bandung (022) 30001818</option>
+    <option value="02130003818">Jakarta (021) 30003818</option>
+    <option value="03416050818">Malang (0341) 6050818</option>
+    <option value="06130000818">Medan (061) 30000818</option>
+    <option value="07116054818">Palembang (0711) 6054818</option>
+    <option value="02433003818">Semarang (024) 33003818</option>
+    <option value="03160000818">Surabaya (031) 60000818</option>
+    </select>
+    <button class="btn-telp" onclick="Customer()">Telp</button>
+</ul>
+
+<ul class="footer__list footer__branch kanan">
+    <h2 class="judul-cakupan" style="margin: 0;text-align: center;display: block;">Telesales</h2>
+    <select id="telesales">
+    <option value="03613002819">Bali (0361) 3002819</option>
+    <option value="02230001819">Bandung (022) 30001819</option>
+    <option value="02130003819">Jakarta (021) 30003819</option>
+    <option value="03416050819">Malang (0341) 6050819</option>
+    <option value="06130000819">Medan (061) 30000819</option>
+    <option value="07116054819">Palembang (0711) 6054819</option>
+    <option value="02433003819">Semarang (024) 33003819</option>
+    <option value="03160000819">Surabaya (031) 60000819</option>
+    </select>
+    <button class="btn-telp" onclick="Telesales()">Telp</button>
+</ul>
+
+<script>
+function Customer(){
+    var select = document.getElementById('customer-service');
+    var option = select.options[select.selectedIndex];
+    var hasil = document.getElementById('customer-service').value = option.value;
+    location.href = "tel:"+hasil;
+    }
+function Telesales(){
+    var select = document.getElementById('telesales');
+    var option = select.options[select.selectedIndex];
+    
+    var hasil = document.getElementById('telesales').value = option.value;
+    location.href = "tel:"+hasil;
+    }
+</script>
+
+
+
+
+<ul class="footer__list footer__branch kirii">
+
+    <h2 class="judul-cakupan">Area Cakupan MyRepublic</h2>
+      <li><a href="https://myrepublic.co.id/area-bali/">Bali</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-bandung/">Bandung</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-bekasi/">Bekasi</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-bogor/">Bogor</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-cibubur/">Cibubur</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-depok/">Depok</a></li> |      
+      <li><a href="https://myrepublic.co.id/area-jakarta/">Jakarta</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-malang/">Malang</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-medan/">Medan</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-palembang/">Palembang</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-semarang/">Semarang</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-surabaya/">Surabaya</a></li> | 
+      <li><a href="https://myrepublic.co.id/area-tangerang/">Tangerang</a></li>
+    </ul>
+
+<ul class="footer__list footer__branch tengah">
+    <h2 class="judul-cakupans">Customer Service</h2>
+    <span>Hubungi CS lokal kami untuk melayani keluhan atau gangguan</span>
+    <select id="customer-service">
+        <option value="03613002818">Bali (0361) 3002818</option>
+        <option value="02230001818">Bandung (022) 30001818</option>
+        <option value="02130003818">Jakarta (021) 30003818</option>
+        <option value="03416050818">Malang (0341) 6050818</option>
+        <option value="06130000818">Medan (061) 30000818</option>
+        <option value="07116054818">Palembang (0711) 6054818</option>
+        <option value="02433003818">Semarang (024) 33003818</option>
+        <option value="03160000818">Surabaya (031) 60000818</option>
+    </select>
+    <button class="btn-telp" onclick="Customer()">Telp</button>
+</ul>
+
+<ul class="footer__list footer__branch kanann">
+    <h2 class="judul-cakupans">Telesales</h2>
+    <span>Hubungi Telesales lokal kami untuk info berlangganan</span>
+    <select id="telesales">
+        <option value="03613002819">Bali (0361) 3002819</option>
+        <option value="02230001819">Bandung (022) 30001819</option>
+        <option value="02130003819">Jakarta (021) 30003819</option>
+        <option value="03416050819">Malang (0341) 6050819</option>
+        <option value="06130000819">Medan (061) 30000819</option>
+        <option value="07116054819">Palembang (0711) 6054819</option>
+        <option value="02433003819">Semarang (024) 33003819</option>
+        <option value="03160000819">Surabaya (031) 60000819</option>
+    </select>
+    <button class="btn-telp" onclick="Telesales()">Telp</button>
+</ul>
