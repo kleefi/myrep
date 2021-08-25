@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wa Form to Chat</title>
+</head>
+<body>
+        <input type="text" id="nama" name="nama"><br>
+        <input type="text" id="paket" name="paket"><br>
+        <input type="submit" onclick="coba()">
+
+    <script>
+function coba(){
+    var getNama = document.getElementById('nama');
+    var getPaket = document.getElementById('paket');
+    var br = '%20%3A%0D%0A';
+    var bawah = '%0A%0A';
+    var linkWA = `https://api.whatsapp.com/send?phone=6285355139497&text=Hallo ${getNama.value}${bawah}Paket pilihan kamu adalah : ${getPaket.value.toUpperCase()}`;
+    location.href = linkWA;
+}
+    </script>
+</body>
+</html>
